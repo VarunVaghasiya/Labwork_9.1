@@ -1,0 +1,23 @@
+// Question-2
+#include<stdio.h>
+
+int main(){
+int t,v,s;
+
+printf(" • Type any size of string :- ");
+scanf("%d",&v);
+char name [v];
+
+printf("\n • Type any string :- ");
+scanf("%s",&name);
+
+for(s=0;s<=v;s++){
+    if(name[s]>=65 && name[s]<=90)
+    name[s]=name[s]+32;
+
+}
+
+printf("\n • Lower case string : %s",name);
+
+return 0;
+}
