@@ -1,0 +1,30 @@
+//Question-3
+#include<stdio.h>
+
+void main(){
+int b,p;
+
+printf(" • Type any size of string :- ");
+scanf("%d",&p);
+
+char NAME[p];
+
+printf(" • Enter a string :- ");
+scanf("%s",&NAME);
+
+for(b=0;b<=p;b++);
+
+    {
+        if(NAME[b]>=65 && NAME[b]<=90)
+            {
+                NAME[b]=NAME[b]+32;
+            }
+        else if (NAME[b]>=97 && NAME[b]<=122)
+            {
+            NAME[b]=NAME[b]-32;        
+            }
+    }
+
+    printf(" • Toggel case :- %S",NAME);
+
+}
